@@ -7,8 +7,6 @@ function getPixelArrayFromImage(img) {
   var imgData = [];
   var pixelArray = [];
 
-  console.log(img);
-
   canvas.width = img.width;
   canvas.height = img.height;
   ctx.drawImage(img, 0, 0, img.width, img.height);
@@ -45,7 +43,6 @@ function getMessageLength(pixels) {
   var length = 0;
   if (getAsciiFromPixels(pixels.slice(0,24)) === 'DIY') {
     length = getDecimalValueFromEightPixels(pixels.slice(24, 32));
-    console.log("length: " + length);
   }
   return length;
 }
