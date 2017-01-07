@@ -1,6 +1,6 @@
 // background.js
 
-import * as decoder from './background/image-decoder';
+import * as decoder from './image/image-decoder';
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.message === 'decode_image') {
