@@ -1,3 +1,7 @@
 body {
-  width: 400px;
+  width: 750px;
+}
+
+input#hidden-address {
+  width: 600px;
 }
